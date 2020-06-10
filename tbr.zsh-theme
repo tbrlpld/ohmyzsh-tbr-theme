@@ -70,9 +70,12 @@ function parse_git_dirty() {
 
 # EXAMPLE
 # PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+#
 # GENTOO
 # PROMPT='%(!.%{$fg_bold[red]%}.%{$fg_bold[green]%}%n@)%m %{$fg_bold[blue]%}%(!.%1~.%~) $(git_prompt_info)$(prompt_char)%{$reset_color%} '
+#
 # Mine
 # PROMPT='%(!.%{$fg[red]%}.%{$fg[magenta]%}%n@)%m %{$fg[blue]%}%(!.%1~.%~) $(git_prompt_info)%{$fg_bold[blue]%}$(prompt_char)%{$reset_color%} '
-PROMPT='%(!.%{$fg[red]%}.%{$fg[magenta]%}%n@)%m %{$fg[blue]%}$(get_pwd) $(git_prompt_info)%{$fg_bold[blue]%}$(prompt_char)%{$reset_color%} '
+# PROMPT='%(!.%{$fg[red]%}.%{$fg[magenta]%}%n@)%m %{$fg[blue]%}$(get_pwd) $(git_prompt_info)%{$fg_bold[blue]%}$(prompt_char)%{$reset_color%} '
+PROMPT='%(!.%{$fg[red]%}.) %{$fg[blue]%}$(get_pwd) $(git_prompt_info)%{$fg_bold[blue]%}$(prompt_char)%{$reset_color%} '
 
